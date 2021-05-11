@@ -1,3 +1,34 @@
-/* img {
-    max-width: 300px;
-} */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #0D1216;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.posts {
+    max-width: 500px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+header {
+    background-color: #050C12;
+    border-bottom: #DEDEDE solid 2px;
+}
+
+header img {
+    max-width: 200px;
+}
