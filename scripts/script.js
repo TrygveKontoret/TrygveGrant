@@ -10,19 +10,21 @@ fetch(url)
         out.innerHTML = "Something went wrong..."
     })
 
-    blob = (blogs) => {
-        console.log(blogs);
-            for (blog of blogs) {
-                let media = blog._embedded["wp:featuredmedia"]
-                for (imgs of media){
-                    console.log(imgs);
-                    let nyBlog = `
-                    <div>
-                    <a href="/details.html?id=${blog.id}"><h2>${blog.title.rendered}</h2></a>
-                    <a href="/details.html?id=${blog.id}"><img src="${imgs.media_details.sizes.medium.source_url}" alt="Movie poster"></a>
-                    </div>
-                    `;
-                    out.innerHTML += nyBlog;
-                }
-        }
+blob = (blogs) => {
+    console.log(blogs);
+        for (blog of blogs) {
+            let media = blog._embedded["wp:featuredmedia"]
+            for (imgs of media){
+                console.log(imgs);
+                let nyBlog = `
+                <div>
+                <a href="/details.html?id=${blog.id}"><h2>${blog.title.rendered}</h2></a>
+                <div class="imgContainer">
+                <a href="/details.html?id=${blog.id}"><img src="${imgs.media_details.sizes.medium.source_url}" alt="Movie poster"></a>
+                </div>
+                </div>
+                `;
+                out.innerHTML += nyBlog;
+            }
     }
+}

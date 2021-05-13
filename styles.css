@@ -1,34 +1,85 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 body {
-    background-color: #0D1216;
+  background-color: #0d1216;
 }
 
 li {
-    text-decoration: none;
-    list-style-type: none;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .posts {
-    max-width: 500px;
-    color: white;
-    text-decoration: none;
-    
+  max-width: 500px;
+  color: white;
+  text-decoration: none;
 }
 
 header {
-    background-color: #050C12;
-    border-bottom: #DEDEDE solid 2px;
+  display: flex;
+  background-color: #050c12;
+  border-bottom: #dedede solid 2px;
 }
 
-header img {
-    max-width: 200px;
+.navbar-head {
+  display: none;
+}
+
+.header-logo img {
+  max-width: 100px;
+}
+
+.navbar {
+  position: relative;
+  top: -1000px;
+  transition: 0.3s;
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 0;
+  background-color: #30638e;
+}
+
+.navbar li {
+  text-align: center;
+  width: 100%;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  padding: 15px 0px;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.slidein {
+  position: relative;
+  top: 0px;
+  height: auto;
+}
+
+.imgContainer img {
+  object-fit: cover;
+  width: 250px;
+  height: 350px;
 }
