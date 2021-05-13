@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "sf_distant_galaxyregular";
+  src: url("fonts/sf_distant_galaxy-webfont.woff2") format("woff2"),
+    url("fonts/sf_distant_galaxy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -27,15 +35,36 @@ li {
 header {
   display: flex;
   background-color: #050c12;
-  border-bottom: #dedede solid 2px;
+  /* border-bottom: #dedede solid 2px; */
+}
+
+.kake {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .navbar-head {
   display: none;
 }
 
+.header-logo {
+  margin: 0 auto;
+  padding: 10px;
+}
+
 .header-logo img {
   max-width: 100px;
+}
+
+.hamburger {
+  position: absolute;
+  margin: 20px 0 0 10px;
+}
+
+.hamburger img {
+  width: 100px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -62,17 +91,6 @@ header {
   padding: 15px 0px;
 }
 
-.hamburger {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hamburger img {
-  width: 100px;
-  cursor: pointer;
-}
-
 .slidein {
   position: relative;
   top: 0px;
@@ -83,4 +101,21 @@ header {
   object-fit: cover;
   width: 250px;
   height: 350px;
+}
+
+.hero {
+  display: flex;
+  background-image: url(media/Fighterscomp.png);
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+.heroText {
+  color: white;
+  font-size: 25px;
+  margin: 200px auto;
+  font-family: "sf_distant_galaxyregular";
 }
