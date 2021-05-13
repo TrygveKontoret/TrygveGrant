@@ -10,6 +10,7 @@ a {
 
 body {
   background-color: #0d1216;
+  position: relative;
 }
 
 li {
@@ -38,7 +39,7 @@ header {
 }
 
 .navbar {
-  position: relative;
+  position: absolute;
   top: -1000px;
   transition: 0.3s;
   height: 0px;
