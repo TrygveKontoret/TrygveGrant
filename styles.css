@@ -67,6 +67,15 @@ header {
   cursor: pointer;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: #445C64 solid 2px;
+  color: white;
+  height: 200px;
+}
+
 .navbar {
   position: absolute;
   top: -1000px;
