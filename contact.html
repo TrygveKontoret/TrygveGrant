@@ -19,6 +19,60 @@
 </script>
 </head>
 <body>
-    
+    <header> 
+        <div class="kake">
+            <div class="hamburger">
+                <img class="burger" src="media/hamburgerMenu2.svg" alt="Hamburger menu">
+            </div>
+            <div class="header-logo">
+                <a href="index.html"><img src="media/OldRepublicLogo.png" alt="Site logo"></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="navbar-head">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bloglist.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a id="activeHead" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bloglist.html">Blogs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a id="activeHead" href="#">Contact</a></li>
+        </ul>
+        <form>
+        <div>
+            <label for="name">Enter name:</label>
+            <input type="text" id="name">
+            <p id="errorName"></p>
+        </div>
+        <div>
+            <label for="email">Enter email:</label>
+            <input type="text" id="email">
+            <p id="errorEmail"></p>
+        </div>
+        <div>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject">
+            <p id="errorSubject"></p>
+        </div>
+        <div>
+            <label for="message">Enter message:</label>
+            <textarea name="message" id="message"></textarea>
+            <p id="errorMessage"></p>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+        <div id="success">
+        </div>
+    </main>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>

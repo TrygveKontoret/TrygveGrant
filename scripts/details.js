@@ -32,5 +32,5 @@ fetch(url)
     .then(data => postDetail(data))
     .catch(error => {
         console.error(error);
-        out.innerHTML = "Seems like the rebels won"
-    })
+        out.innerHTML = "Seems like the rebels won"})
+    .finally(()=> out.classList.remove("loading"));

@@ -1,6 +1,5 @@
 const url = "https://trygvegrant.no/wp-json/wp/v2/posts?_embed=true&per_page=100";
-const out = document.querySelector(".blog");
-const loading = document.querySelector(".loading");
+const out = document.querySelector(".blogPosts");
 
 
 fetch(url)
@@ -9,7 +8,7 @@ fetch(url)
     .catch(error => {
         console.error(error);
         out.innerHTML = "Something went wrong..."})
-    .finally(()=> loading.style.display="none");
+    .finally(()=> out.classList.remove("loading"));
 
 
 blob = (blogs) => {
@@ -24,6 +23,7 @@ blob = (blogs) => {
                 <div class="imgContainer">
                 <a href="/details.html?id=${blog.id}"><img src="${imgs.media_details.sizes.medium.source_url}" alt="Movie poster"></a>
                 </div>
+                ${imgs.caption.rendered}
                 </div>
                 `;
                 out.innerHTML += nyBlog;

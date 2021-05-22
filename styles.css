@@ -32,6 +32,11 @@ li {
   text-decoration: none;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
 header {
   display: flex;
   background-color: #050c12;
@@ -130,7 +135,6 @@ footer {
   font-family: "sf_distant_galaxyregular";
 }
 
-
 .hero-about {
   display: flex;
   background-image: url(media/DeathStarII-BotF.jpg);
@@ -139,4 +143,26 @@ footer {
   background-position: center;
   background-size: cover;
   justify-content: center;
+}
+
+
+/* Contact */
+
+form {
+  color: white;
+
+}
+
+#message {
+  height: 100px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  padding: 10px;
 }
