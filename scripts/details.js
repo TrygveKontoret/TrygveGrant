@@ -5,6 +5,7 @@ const id = parameter.get("id");
 
 const url = `https://trygvegrant.no/wp-json/wp/v2/posts/${id}?_embed=true`;
 const out = document.querySelector(".posts");
+const loading = document.querySelector(".loading");
 
 postDetail = (details) => {
     console.log(details);
@@ -33,4 +34,4 @@ fetch(url)
     .catch(error => {
         console.error(error);
         out.innerHTML = "Seems like the rebels won"})
-    .finally(()=> out.classList.remove("loading"));
+    .finally(()=> loading.style.display="none");

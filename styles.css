@@ -145,6 +145,50 @@ footer {
   justify-content: center;
 }
 
+.hero-bloglist {
+  display: flex;
+  background-image: url(media/TheChaseCoverBlips.jpg);
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+/* .hero-details {
+  display: flex;
+  background-image: url(media/Star_Wars_Princess_FDCR.png);
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+} */
+
+.hero-contact {
+  display: flex;
+  background-image: url(media/TheChaseCoverBlips.jpg);
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+
+
+/* Frontpage */
+
+.blog {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.blog div {
+  margin: 10px;
+  /* font-family: "sf_distant_galaxyregular"; */
+}
 
 /* Contact */
 

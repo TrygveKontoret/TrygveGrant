@@ -1,5 +1,6 @@
 const url = "https://trygvegrant.no/wp-json/wp/v2/posts?_embed=true&per_page=100";
 const out = document.querySelector(".blogPosts");
+const loading = document.querySelector(".loading");
 
 
 fetch(url)
@@ -8,7 +9,7 @@ fetch(url)
     .catch(error => {
         console.error(error);
         out.innerHTML = "Something went wrong..."})
-    .finally(()=> out.classList.remove("loading"));
+    .finally(()=> loading.style.display="none");
 
 
 blob = (blogs) => {

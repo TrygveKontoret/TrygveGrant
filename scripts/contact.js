@@ -50,4 +50,4 @@ function formValidation(form) {
     if (errorName.innerHTML === "" && errorEmail.innerHTML === "" && errorSubject.innerHTML === "" && errorMessage.innerHTML === "") {
         success.innerHTML += "Message sent!"
     }
-}
+};
