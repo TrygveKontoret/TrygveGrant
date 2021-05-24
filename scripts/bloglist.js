@@ -37,7 +37,7 @@ blogList = (blogs) => {
 viewMore.addEventListener("click", ()=> {
     fetch(urlMore)
     .then(response => response.json())
-    .then(data => blob(data))
+    .then(data => blogList(data))
     .catch(error => {
         console.error(error);
         out.innerHTML = "Something went wrong..."})
