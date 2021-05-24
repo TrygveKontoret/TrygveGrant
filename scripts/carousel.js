@@ -5,14 +5,14 @@ const loading = document.querySelector(".loading");
 
 fetch(url)
     .then(response => response.json())
-    .then(data => carousel(data))
+    .then(data => blogPosts(data))
     .catch(error => {
         console.error(error);
         out.innerHTML = "Something went wrong..."})
     .finally(()=> loading.style.display="none");
 
 
-carousel = (blogs) => {
+blogPosts = (blogs) => {
     console.log(blogs);
         for (blog of blogs) {
             let media = blog._embedded["wp:featuredmedia"]

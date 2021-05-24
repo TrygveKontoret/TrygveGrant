@@ -9,7 +9,7 @@ const loading = document.querySelector(".loading");
 
 postDetail = (details) => {
     console.log(details);
-    document.title = `${details.title.rendered}`
+    document.title = `${details.title.rendered} | Star Blogs`
         let media = details._embedded["wp:featuredmedia"]
         for (images of media){
             console.log(images);

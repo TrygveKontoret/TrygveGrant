@@ -191,17 +191,16 @@ footer {
   justify-content: center;
 }
 
-
 /* Frontpage*/
 
-.blog{
+.carousel{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
 }
 
-.blog div {
+.carousel div {
   margin: 10px;
   /* font-family: "sf_distant_galaxyregular"; */
 }
@@ -210,7 +209,6 @@ footer {
 
 form {
   color: white;
-
 }
 
 #success {
