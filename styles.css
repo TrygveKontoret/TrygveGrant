@@ -142,7 +142,7 @@ footer {
 
 .heroText {
   /* color:white; */
-  font-size: 25px;
+  font-size: 19px;
   margin: 200px auto;
   font-family: "sf_distant_galaxyregular";
   -webkit-text-fill-color: white;
@@ -209,6 +209,7 @@ footer {
 
 form {
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 #success {
@@ -218,6 +219,14 @@ form {
 
 #message {
   height: 100px;
+}
+
+form input {
+  width: 20%;
+}
+
+form textarea {
+  width: 20%;
 }
 
 form > div {
@@ -254,14 +263,21 @@ form label {
   font-style: italic;
 }
 
-.more {
+.viewMore {
+  display: flex;
+  justify-content: center;
+} 
+
+.more, .submit-btn {
   width: 200px;
   height: 50px;
   color: white;
   background-color: #445C64;
   border: 0px;
   border-radius: 2px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 
@@ -270,32 +286,41 @@ form label {
 .posts {
   display: flex;
   justify-content: center;
+  margin: 0px auto;
 }
 
-/* .posts > div {
+.posts > div {
   display: flex;
+  flex-direction: column;
   margin-top: 20px;
   width: 80%;
   align-items: center;
-} */
+}
 
 .posts h2 {
   text-align: center;
+}
+
+.posts img {
+  margin: 20px 0;
+}
+
+.posts p {
+  margin: 10px 0;
 }
 
 
 /* About */
 
 .about-us {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 70%;
-  margin: 20px 0;
+  align-items: center; */
+  width: 50%;
+  margin: 50px auto;
 }
 
 .about-us p {
   margin: 10px auto;
-  
 }
