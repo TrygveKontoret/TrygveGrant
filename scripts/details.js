@@ -14,7 +14,6 @@ postDetail = (details) => {
         for (images of media){
             console.log(images);
             let nyDetail = `
-            <p><a href="index.html">Go back</a></p>
             <div>
             <h2>${details.title.rendered}</h2>
             <img src="${images.media_details.sizes.medium.source_url}" alt="Movie poster">

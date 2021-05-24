@@ -141,10 +141,14 @@ footer {
 }
 
 .heroText {
-  color: white;
+  /* color:white; */
   font-size: 25px;
   margin: 200px auto;
   font-family: "sf_distant_galaxyregular";
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  letter-spacing: 3.5px;
 }
 
 .hero-about {
@@ -159,7 +163,7 @@ footer {
 
 .hero-bloglist {
   display: flex;
-  background-image: url(media/TheChaseCoverBlips.jpg);
+  background-image: url(media/Endurance_enters_Vanqor_atmo.png);
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -179,7 +183,7 @@ footer {
 
 .hero-contact {
   display: flex;
-  background-image: url(media/TheChaseCoverBlips.jpg);
+  background-image: url(media/Coruscant_system-TPM.jpg);
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -188,9 +192,9 @@ footer {
 }
 
 
-/* Frontpage */
+/* Frontpage*/
 
-.blog {
+.blog{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -226,4 +230,33 @@ form > div {
 
 form {
   padding: 10px;
+}
+
+/* Bloglist */
+
+.blogPosts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blogPosts div {
+  margin: 10px;
+}
+
+.blogPosts h2 {
+  text-align: center;
+}
+
+.blogPosts p {
+  max-width: 250px;
+  font-style: italic;
+}
+
+/* Details */
+
+.posts {
+  display: flex;
+  justify-content: center;
+  
 }
