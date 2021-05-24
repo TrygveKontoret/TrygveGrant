@@ -7,14 +7,14 @@ const viewMore = document.querySelector(".more");
 
 fetch(url)
     .then(response => response.json())
-    .then(data => blob(data))
+    .then(data => blogList(data))
     .catch(error => {
         console.error(error);
         out.innerHTML = "Something went wrong..."})
     .finally(()=> loading.style.display="none");
 
 
-blob = (blogs) => {
+blogList = (blogs) => {
     console.log(blogs);
         for (blog of blogs) {
             let media = blog._embedded["wp:featuredmedia"]
