@@ -43,11 +43,11 @@ function formValidation(form) {
     // Message
     let enteredMessage = message.value.trim();
     if (enteredMessage.length < 25) {
-        errorMessage.innerHTML += "Message must be a minimum of 25 characters";
+        errorMessage.innerHTML = "Message must be a minimum of 25 characters";
     }
 
     // Success
     if (errorName.innerHTML === "" && errorEmail.innerHTML === "" && errorSubject.innerHTML === "" && errorMessage.innerHTML === "") {
-        success.innerHTML += "Message sent!"
+        success.innerHTML = "Message sent!"
     }
 };
