@@ -328,8 +328,9 @@ form label {
 .carousel {
   width: 60%;
   margin: auto;
-  /* overflow: hidden; */
+  overflow: hidden;
   border: 5px solid black;
+  z-index: 0;
 }
 
 .carousel-slide {

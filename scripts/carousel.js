@@ -1,7 +1,8 @@
 const url = "https://trygvegrant.no/wp-json/wp/v2/posts?_embed=true&per_page=8";
 const out = document.querySelector(".carousel-slide");
+const carouselContainer = document.querySelector(".carousel")
 const loading = document.querySelector(".loading");
-const carouselDiv = document.querySelector(".card");
+// const carouselDiv = document.querySelector(".card");
 
 
 fetch(url)
@@ -40,10 +41,10 @@ const nextBtn = document.querySelector("#nextBtn");
 
 // counter
 
-let counter = 1;
-const size = carouselDiv;
+let counter = 0;
+const size = carouselContainer.clientWidth;
 
-out.style.transform = 'translateX(' + (counter) + 'px)';
+out.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 // Button listener
 
@@ -51,14 +52,14 @@ nextBtn.addEventListener('click', ()=>{
     out.style.transition = "transform 0.4s ease-in-out";
     counter++;
     console.log(counter);
-    out.style.transform = 'translateX(' + (counter) + 'px)';
+    out.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
 prevBtn.addEventListener('click', ()=>{
     out.style.transition = "transform 0.4s ease-in-out";
     counter--;
     console.log(counter);
-    out.style.transform = 'translateX(' + (counter) + 'px)';
+    out.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
 out.addEventListener('transitionend', ()=>{
