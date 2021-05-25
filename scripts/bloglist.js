@@ -30,9 +30,9 @@ blogList = (blogs) => {
                 </div>
                 `;
                 out.innerHTML += nyBlog;
-            }
-    }
-}
+            };
+    };
+};
 
 viewMore.addEventListener("click", ()=> {
     fetch(urlMore)

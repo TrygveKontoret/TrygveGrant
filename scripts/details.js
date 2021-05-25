@@ -7,6 +7,7 @@ const id = parameter.get("id");
 const url = `https://trygvegrant.no/wp-json/wp/v2/posts/${id}?_embed=true`;
 const out = document.querySelector(".posts");
 const loading = document.querySelector(".loading");
+const kake = document.querySelector(".kake");
 
 postDetail = (details) => {
     console.log(details);
@@ -16,15 +17,19 @@ postDetail = (details) => {
             console.log(images);
             let nyDetail = `
             <div>
-            <h2>${details.title.rendered}</h2>
-            <img class="bigger" src="${images.media_details.sizes.medium.source_url}" alt="Movie poster">
+            <img onClick="funkyModal()" class="bigger" src="${images.media_details.sizes.medium.source_url}" alt="Star Wars ">
             <p>${details.content.rendered}</p>
             </div>
             `
             out.innerHTML += nyDetail;
+            kake.innerHTML = `<h1>${details.title.rendered}</h1>`;
         }
 }
 
+const funkyModal = ()=> {
+    const funky = document.querySelector(".bigger");
+    console.log(funky);
+}
 
 
 fetch(url)

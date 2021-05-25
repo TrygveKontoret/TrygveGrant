@@ -115,9 +115,9 @@ footer {
   display: none;
 }
 
-.cross img {
+/* .cross img {
   width: 10px;
-}
+} */
 
 /* .display-none {
   display: none;
@@ -153,7 +153,7 @@ footer {
 
 .heroText {
   /* color:white; */
-  font-size: 19px;
+  font-size: 16px;
   margin: 200px auto;
   font-family: "sf_distant_galaxyregular";
   -webkit-text-fill-color: white;
@@ -182,15 +182,16 @@ footer {
   justify-content: center;
 }
 
-/* .hero-details {
+.hero-details {
   display: flex;
-  background-image: url(media/Star_Wars_Princess_FDCR.png);
+  background-image: url(media/TCW_Pelta_CAM2_HD.png);
   align-items: center;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   justify-content: center;
-} */
+}
 
 .hero-contact {
   display: flex;
@@ -331,6 +332,8 @@ form label {
   margin: 10px 0;
 }
 
+
+
 /* About */
 
 .about-us {
@@ -368,9 +371,20 @@ form label {
   object-fit: cover;
   width: 260px;
   height: 350px;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
-/* #prevBtn{
-  
-} */
+#prevBtn{
+  position: absolute;
+  cursor: pointer;
+  left: 12%;
+  bottom: 25%;
+  z-index: 5;
+}
+
+#nextBtn{
+  position: absolute;
+  cursor: pointer;
+  left: 79%;
+  bottom: 25%;
+}
