@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
 @font-face {
   font-family: "sf_distant_galaxyregular";
   src: url("fonts/sf_distant_galaxy-webfont.woff2") format("woff2"),
@@ -6,15 +9,12 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
-/* font-family: 'Poppins', sans-serif; */
-
 * {
   margin: 0px;
   padding: 0px;
 }
 
-a, p {
+a, p, h2, h3{
   text-decoration: none;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -30,11 +30,16 @@ li {
   list-style-type: none;
 }
 
-.posts {
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* .posts {
   max-width: 500px;
   color: white;
   text-decoration: none;
-}
+} */
 
 .loading {
   display: flex;
@@ -98,13 +103,25 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  z-index: 0;
+  z-index: 10;
   background-color: #445C64;
 }
 
 .navbar-active {
   transform: translateX(0%);
 }
+
+.cross{
+  display: none;
+}
+
+.cross img {
+  width: 10px;
+}
+
+/* .display-none {
+  display: none;
+} */
 
 .navbar li {
   text-align: center;
@@ -122,12 +139,6 @@ footer {
   position: relative;
   top: 0px;
   height: auto;
-}
-
-.imgContainer img {
-  object-fit: cover;
-  width: 250px;
-  height: 350px;
 }
 
 .hero {
@@ -221,25 +232,38 @@ form {
   height: 100px;
 }
 
+.form-container {
+  width: 80%;
+  margin: auto;
+}
+
 form input {
-  width: 70%;
+  width: 100%;
 }
 
 form textarea {
-  width: 70%;
+  width: 100%;
 }
 
 form > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 20px;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
 }
 
 form label {
   margin-bottom: 5px;
 }
 
+.btn-submit {
+  align-items: center;
+}
+
+/* fieldset {
+  width: 100%;
+} */
 
 /* Bloglist */
 
@@ -267,7 +291,7 @@ form label {
   justify-content: center;
 } 
 
-.more, .submit-btn {
+.more, #submit-btn {
   width: 200px;
   height: 50px;
   color: white;
@@ -326,15 +350,27 @@ form label {
 /* Carousel */
 
 .carousel {
-  width: 60%;
+  width: 300px;
   margin: auto;
   overflow: hidden;
-  border: 5px solid black;
-  z-index: 0;
+  /* border: 5px solid black; */
 }
 
 .carousel-slide {
   display: flex;
   width: 100%;
   height: 400px;
+  z-index: 0;
+  /* margin: 0; */
 }
+
+.imgContainer img {
+  object-fit: cover;
+  width: 260px;
+  height: 350px;
+  border-radius: 2px;
+}
+
+/* #prevBtn{
+  
+} */

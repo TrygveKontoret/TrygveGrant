@@ -23,6 +23,7 @@
         <div class="burgerLogo">
             <div class="hamburger">
                 <img class="burger" src="media/hamburgerMenu2.svg" alt="Hamburger menu">
+                <img class="cross"  src="media/Cross.svg" alt="Cross">
             </div>
             <div class="header-logo">
                 <a href="index.html"><img src="media/OldRepublicLogo.png" alt="Site logo"></a>
@@ -49,7 +50,9 @@
                 <h1>Contact</h1>
             </div>
         </div>
-        
+        <div id="success">
+        </div>
+        <div class="form-container">
         <form>
         <div>
             <label for="name">Enter name:</label>
@@ -71,12 +74,12 @@
             <textarea name="message" id="message"></textarea>
             <p id="errorMessage"></p>
         </div>
-        <div>
-            <input type="submit" value="Submit" class="submit-btn">
+        <div class="btn-submit">
+            <input type="submit" value="Submit" id="submit-btn">
         </div>
         </form>
-        <div id="success">
         </div>
+        
     </main>
     <script src="scripts/contact.js"></script>
     <script src="scripts/hamburger.js"></script>

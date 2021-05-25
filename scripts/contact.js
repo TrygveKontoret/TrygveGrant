@@ -42,6 +42,7 @@ function formValidation(form) {
 
     // Message
     let enteredMessage = message.value.trim();
+    errorMessage.innerHTML = "";
     if (enteredMessage.length < 25) {
         errorMessage.innerHTML = "Message must be a minimum of 25 characters";
     }

@@ -3,6 +3,7 @@ const parameter = new URLSearchParams(query);
 const id = parameter.get("id");
 
 
+
 const url = `https://trygvegrant.no/wp-json/wp/v2/posts/${id}?_embed=true`;
 const out = document.querySelector(".posts");
 const loading = document.querySelector(".loading");
@@ -16,8 +17,7 @@ postDetail = (details) => {
             let nyDetail = `
             <div>
             <h2>${details.title.rendered}</h2>
-            <img src="${images.media_details.sizes.medium.source_url}" alt="Movie poster">
-            ${images.caption.rendered}
+            <img class="bigger" src="${images.media_details.sizes.medium.source_url}" alt="Movie poster">
             <p>${details.content.rendered}</p>
             </div>
             `
@@ -34,3 +34,6 @@ fetch(url)
         console.error(error);
         out.innerHTML = "Seems like the rebels won"})
     .finally(()=> loading.style.display="none");
+
+const biggerimg = document.querySelector(".bigger");
+console.log(biggerimg);
