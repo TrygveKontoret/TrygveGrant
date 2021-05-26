@@ -365,6 +365,7 @@ form label {
   margin: auto;
   overflow: hidden;
   /* border: 5px solid black; */
+  margin-bottom: 50px;
 }
 
 .carousel-slide {
@@ -393,6 +394,18 @@ form label {
 #nextBtn{
   position: absolute;
   cursor: pointer;
-  left: 79%;
+  right: 12%;
   bottom: 25%;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .carousel {
+    width: 1200px;
+  }
 }
