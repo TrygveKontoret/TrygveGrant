@@ -9,6 +9,14 @@
   font-style: normal;
 }
 
+/* @font-face {
+  font-family: 'sf_distant_galaxy_outlineRg';
+  src: url('sf_distant_galaxy_outline-webfont.woff2') format('woff2'),
+       url('sf_distant_galaxy_outline-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -132,7 +140,7 @@ footer {
   display: block;
   color: #050c12;
   padding: 15px 0px;
-  font-family: 'sf_distant_galaxyregular';
+  font-family: "sf_distant_galaxyregular";
 }
 
 .slidein {
