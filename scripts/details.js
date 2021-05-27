@@ -17,7 +17,7 @@ postDetail = (details) => {
             console.log(images);
             let nyDetail = `
             <div>
-            <img onClick="funkyModal()" class="bigger" src="${images.media_details.sizes.medium.source_url}" alt="Star Wars ">
+            <img onClick="funkyModal()" class="bigger" src="${images.media_details.sizes.full.source_url}" alt="Star Wars ">
             <p>${details.content.rendered}</p>
             </div>
             `

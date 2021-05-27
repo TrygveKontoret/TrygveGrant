@@ -123,9 +123,9 @@ footer {
   display: none;
 }
 
-/* .cross img {
+.cross img {
   width: 10px;
-} */
+}
 
 /* .display-none {
   display: none;
@@ -293,6 +293,8 @@ form label {
 .blogPosts p {
   max-width: 250px;
   font-style: italic;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .viewMore {
@@ -361,6 +363,7 @@ form label {
 /* Carousel */
 
 .carousel {
+  position: relative;
   width: 300px;
   margin: auto;
   overflow: hidden;
@@ -386,16 +389,16 @@ form label {
 #prevBtn{
   position: absolute;
   cursor: pointer;
-  left: 12%;
-  bottom: 25%;
+  left: 0;
+  bottom: 45%;
   z-index: 5;
 }
 
 #nextBtn{
   position: absolute;
   cursor: pointer;
-  right: 12%;
-  bottom: 25%;
+  right: 0;
+  bottom: 45%;
 }
 
 @media (min-width: 768px) {

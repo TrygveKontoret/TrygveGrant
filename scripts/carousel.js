@@ -48,7 +48,15 @@ out.style.transform = 'translateX(' + (-size * counter) + 'px)';
 // Button listener
 
 nextBtn.addEventListener('click', ()=>{
-    if(counter >= 7) {
+    if(carouselContainer.clientWidth === 300 && counter >= 7) {
+        counter = -1
+        out.style.transform = 'translateX(0px)';
+    }
+    else if(carouselContainer.clientWidth === 600 && counter >= 3) {
+        counter = -1
+        out.style.transform = 'translateX(0px)';
+    }
+    else if(carouselContainer.clientWidth === 1200 && counter >= 1) {
         counter = -1
         out.style.transform = 'translateX(0px)';
     }
