@@ -86,6 +86,11 @@ header {
   z-index: 999;
 }
 
+.burgerBody {
+  overflow: hidden;
+  height: 120vh;
+}
+
 .hamburger img {
   width: 100px;
   cursor: pointer;
@@ -123,9 +128,9 @@ footer {
   display: none;
 }
 
-.cross img {
+/* .cross{
   width: 10px;
-}
+} */
 
 /* .display-none {
   display: none;
@@ -342,9 +347,10 @@ form label {
   margin: 10px 0;
 }
 
-/* .bigger {
-  width: 100%;
-} */
+.bigger {
+  width: 300px;
+  margin: 00;
+}
 
 .modal {
   width: 100%;

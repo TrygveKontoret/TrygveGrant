@@ -32,7 +32,6 @@ const funkyModal = ()=> {
     modal.style.display = "flex"
     body.classList.add("modalBody");
     document.documentElement.scrollTop = "0";
-    document.body.scrollTop = "0";
 }
 
 modal.addEventListener("click", function() {
@@ -50,4 +49,3 @@ fetch(url)
     .finally(()=> loading.style.display="none");
 
 const biggerimg = document.querySelector(".bigger");
-console.log(biggerimg);
