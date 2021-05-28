@@ -67,8 +67,16 @@ nextBtn.addEventListener('click', ()=>{
 });
 
 prevBtn.addEventListener('click', ()=>{
-    if(counter <= 0) {
+    if(carouselContainer.clientWidth === 300 && counter <= 0) {
         counter = 8
+        out.style.transform = 'translateX(0px)';
+    }
+    else if(carouselContainer.clientWidth === 600 && counter <= 0) {
+        counter = 4
+        out.style.transform = 'translateX(0px)';
+    }
+    else if(carouselContainer.clientWidth === 1200 && counter <= 0) {
+        counter = 2
         out.style.transform = 'translateX(0px)';
     }
     out.style.transition = "transform 0.4s ease-in-out";
@@ -77,6 +85,6 @@ prevBtn.addEventListener('click', ()=>{
     out.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
-out.addEventListener('transitionend', ()=>{
-    console.log('Fired');
-});
+// out.addEventListener('transitionend', ()=>{
+//     console.log('Fired');
+// });
