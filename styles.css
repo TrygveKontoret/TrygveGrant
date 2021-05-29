@@ -96,6 +96,10 @@ header {
   cursor: pointer;
 }
 
+#activeHead {
+  background-color: red;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -247,7 +251,7 @@ form {
 }
 
 .form-container {
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
@@ -273,6 +277,16 @@ form label {
 
 .btn-submit {
   align-items: center;
+}
+
+form p {
+  color: rgb(196, 24, 24);
+}
+
+#success {
+  color: rgb(28, 226, 28);
+  font-size: 20px;
+  margin: 20px;
 }
 
 /* fieldset {
@@ -323,8 +337,11 @@ form label {
 
 .posts {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0px auto;
+  width: 100%;
 }
 
 .posts > div {
@@ -341,6 +358,7 @@ form label {
 
 .posts img {
   margin: 20px 0;
+  width: 100%;
 }
 
 .posts p {
@@ -348,8 +366,12 @@ form label {
 }
 
 .bigger {
+  max-width: 300px;
+  margin: 0;
+}
+
+.modal-img {
   width: 300px;
-  margin: 00;
 }
 
 .modal {
@@ -435,10 +457,89 @@ form label {
   .carousel {
     width: 600px;
   }
+
+  .modal-img {
+    width: 600px;
+  }
+
+  .heroText {
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+
+  .form-container {
+    max-width: 400px;
+  }
 }
 
 @media (min-width: 1300px) {
   .carousel {
     width: 1200px;
+  }
+
+  .modal-img {
+    object-fit: contain;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* header {
+    display: flex;
+    height: 150px;
+    padding: 0 30px;
+  } */
+
+  /* .navbar-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  } */
+
+  .burgerLogo {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 30px
+  }
+
+  nav {
+    display: inline-flex;
+    width: 50vw;
+  }
+
+  .navbar-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 25px;
+  }
+
+  .header-logo {
+    margin: 0;
+  }
+
+  .header-logo img {
+    width: 75px;
+  }
+
+  .morkake {
+    margin: auto 20px;
+  }
+
+  .heroText {
+    font-size: 40px;
+    letter-spacing: 9px;
+  }
+
+  .posts div {
+    display: inline;
   }
 }

@@ -23,7 +23,7 @@ blogPosts = (blogs) => {
                 <div class="card">
                     <a href="details.html?id=${blog.id}"><h3>${blog.title.rendered}</h3></a>
                     <div class="imgContainer">
-                    <a href="details.html?id=${blog.id}"><img src="${imgs.media_details.sizes.medium.source_url}" alt="Movie poster"></a>
+                    <a href="details.html?id=${blog.id}"><img src="${imgs.media_details.sizes.medium.source_url}" alt="${imgs.alt_text}"></a>
                     </div>
                 </div>
                 `;

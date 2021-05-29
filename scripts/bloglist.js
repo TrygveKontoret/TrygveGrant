@@ -4,7 +4,6 @@ const out = document.querySelector(".blogPosts");
 const loading = document.querySelector(".loading");
 const viewMore = document.querySelector(".more");
 
-
 fetch(url)
     .then(response => response.json())
     .then(data => blogList(data))
@@ -24,7 +23,7 @@ blogList = (blogs) => {
                 <div>
                 <a href="/details.html?id=${blog.id}"><h2>${blog.title.rendered}</h2></a>
                 <div class="imgContainer">
-                <a href="/details.html?id=${blog.id}"><img src="${imgs.media_details.sizes.medium.source_url}" alt="Movie poster"></a>
+                <a href="/details.html?id=${blog.id}"><img src="${imgs.media_details.sizes.medium.source_url}" alt="${imgs.alt_text}"></a>
                 </div>
                 ${imgs.caption.rendered}
                 </div>
@@ -42,4 +41,4 @@ viewMore.addEventListener("click", ()=> {
         console.error(error);
         out.innerHTML = "Something went wrong..."})
     .finally(()=> loading.style.display="none", viewMore.style.display="none");
-})
+});

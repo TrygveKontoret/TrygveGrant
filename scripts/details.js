@@ -11,34 +11,35 @@ const body = document.querySelector("body");
 
 postDetail = (details) => {
     console.log(details);
-    document.title = `${details.title.rendered} | Star Blogs`
+    document.title = `Star Blogs | ${details.title.rendered}`
         let media = details._embedded["wp:featuredmedia"]
         for (images of media){
             console.log(images);
             let nyDetail = `
             <div>
-            <img onClick="funkyModal()" class="bigger" src="${images.media_details.sizes.full.source_url}" alt="Star Wars">
-            <p>${details.content.rendered}</p>
+            <img onClick="funkyModal()" class="bigger" src="${images.media_details.sizes.full.source_url}" alt="${images.alt_text}">
+            </div>
+            <div>
+            <p class="postText">${details.content.rendered}</p>
             </div>
             `
             out.innerHTML += nyDetail;
             kake.innerHTML = `<h1>${details.title.rendered}</h1>`;
-            modal.innerHTML = `<img class="modal-img" src="${images.media_details.sizes.full.source_url}" alt="Star Wars">`
+            modal.innerHTML = `<img class="modal-img" src="${images.media_details.sizes.full.source_url}" alt="${images.alt_text}">`
         }
-}
+};
 
 const funkyModal = ()=> {
     const funky = document.querySelector(".bigger");
-    modal.style.display = "flex"
+    modal.style.display = "flex";
     body.classList.add("modalBody");
     document.documentElement.scrollTop = "0";
-}
+};
 
 modal.addEventListener("click", function() {
     modal.style.display = "none";
     body.classList.remove("modalBody");
-})
-
+});
 
 fetch(url)
     .then(response => response.json())
@@ -48,4 +49,4 @@ fetch(url)
         out.innerHTML = "Seems like the rebels won"})
     .finally(()=> loading.style.display="none");
 
-const biggerimg = document.querySelector(".bigger");
+// const biggerimg = document.querySelector(".bigger");

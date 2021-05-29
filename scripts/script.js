@@ -22,7 +22,7 @@ carousel = (blogs) => {
                 <div>
                     <a href="/details.html?id=${blog.id}"><h2>${blog.title.rendered}</h2></a>
                     <div class="imgContainer">
-                    <a href="/details.html?id=${blog.id}"><img src="${imgs.media_details.sizes.medium.source_url}" alt="Movie poster"></a>
+                    <a href="/details.html?id=${blog.id}"><img src="${imgs.media_details.sizes.medium.source_url}" alt="${imgs.alt_text}"></a>
                     </div>
                 </div>
                 `;

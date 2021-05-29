@@ -30,21 +30,21 @@ function formValidation(form) {
     errorEmail.innerHTML = "";
     let emailpattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!emailpattern.test(enteredEmail)) {
-        errorEmail.innerHTML += "Please enter a valid email";
+        errorEmail.innerHTML += "Please enter a valid email!";
     }
 
     // Subject
     let enteredSubject = subject.value.trim();
     errorSubject.innerHTML = "";
     if (enteredSubject.length < 15) {
-        errorSubject.innerHTML += "Subject must be a minimum of 15 characters";
+        errorSubject.innerHTML += "Subject must be a minimum of 15 characters!";
     }
 
     // Message
     let enteredMessage = message.value.trim();
     errorMessage.innerHTML = "";
     if (enteredMessage.length < 25) {
-        errorMessage.innerHTML = "Message must be a minimum of 25 characters";
+        errorMessage.innerHTML = "Message must be a minimum of 25 characters!";
     }
 
     // Success
