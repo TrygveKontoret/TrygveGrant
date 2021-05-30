@@ -8,10 +8,13 @@ const loading = document.querySelector(".loading");
 const kake = document.querySelector(".kake");
 const modal = document.querySelector(".modal");
 const body = document.querySelector("body");
+const meta = document.querySelector(".meta");
 
 postDetail = (details) => {
     console.log(details);
     document.title = `Star Blogs | ${details.title.rendered}`
+    meta.setAttribute("name", "description");
+    meta.setAttribute("content", `${details.excerpt.rendered}`);
         let media = details._embedded["wp:featuredmedia"]
         for (images of media){
             console.log(images);
@@ -48,5 +51,3 @@ fetch(url)
         console.error(error);
         out.innerHTML = "Seems like the rebels won"})
     .finally(()=> loading.style.display="none");
-
-// const biggerimg = document.querySelector(".bigger");
