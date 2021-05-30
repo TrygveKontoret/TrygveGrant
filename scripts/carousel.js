@@ -9,7 +9,7 @@ fetch(url)
     .then(data => blogPosts(data))
     .catch(error => {
         console.error(error);
-        out.innerHTML = "Something went wrong..."})
+        out.innerHTML = "This isn't the page you're looking for"})
     .finally(()=> loading.style.display="none");
 
 
