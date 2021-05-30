@@ -9,14 +9,6 @@
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: 'sf_distant_galaxy_outlineRg';
-  src: url('sf_distant_galaxy_outline-webfont.woff2') format('woff2'),
-       url('sf_distant_galaxy_outline-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
-
 * {
   margin: 0px;
   padding: 0px;
@@ -43,12 +35,6 @@ h2 {
   margin: 20px 0;
 }
 
-/* .posts {
-  max-width: 500px;
-  color: white;
-  text-decoration: none;
-} */
-
 .loading {
   display: flex;
   justify-content: center;
@@ -57,7 +43,6 @@ h2 {
 header {
   display: flex;
   background-color: #050c12;
-  /* border-bottom: #dedede solid 2px; */
 }
 
 .burgerLogo {
@@ -73,7 +58,6 @@ header {
 .header-logo {
   margin: 0 auto;
   padding: 10px;
-  /* z-index: 999; */
 }
 
 .header-logo img {
@@ -135,14 +119,6 @@ footer {
   display: none;
 }
 
-/* .cross{
-  width: 10px;
-} */
-
-/* .display-none {
-  display: none;
-} */
-
 .navbar li {
   text-align: center;
   width: 100%;
@@ -172,7 +148,6 @@ footer {
 }
 
 .heroText {
-  /* color:white; */
   font-size: 16px;
   margin: 200px auto;
   font-family: "sf_distant_galaxyregular";
@@ -234,7 +209,6 @@ footer {
 
 .carousel div {
   margin: 10px;
-  /* font-family: "sf_distant_galaxyregular"; */
 }
 
 /* Contact */
@@ -291,12 +265,6 @@ form p {
   font-size: 20px;
   margin: 20px;
 }
-
-/* fieldset {
-  width: 100%;
-} */
-
-/* Bloglist */
 
 .blogPosts {
   display: flex;
@@ -398,10 +366,6 @@ form p {
 /* About */
 
 .about-us {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   width: 80%;
   margin: 50px auto;
 }
@@ -418,7 +382,6 @@ form p {
   width: 300px;
   margin: auto;
   overflow: hidden;
-  /* border: 5px solid black; */
   margin-bottom: 50px;
 }
 
@@ -427,7 +390,6 @@ form p {
   width: 100%;
   height: 400px;
   z-index: 0;
-  /* margin: 0; */
 }
 
 .imgContainer img {
@@ -492,12 +454,6 @@ form p {
     display: none;
   }
 
-  /* header {
-    display: flex;
-    height: 150px;
-    padding: 0 30px;
-  } */
-
   .navbar-head {
     display: flex;
     justify-content: center;
@@ -553,12 +509,4 @@ form p {
   .posts {
     width: 80%;
   }
-
-  /* .posts img {
-    width: 700px;
-  } */
-
-  /* .posts div {
-    display: inline;
-  } */
 }

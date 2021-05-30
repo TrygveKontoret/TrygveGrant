@@ -28,9 +28,9 @@ blogPosts = (blogs) => {
                 </div>
                 `;
                 out.innerHTML += nyBlog;
-            }
-    }
-}
+            };
+    };
+};
 
 
 // buttons
@@ -62,7 +62,6 @@ nextBtn.addEventListener('click', ()=>{
     }
     out.style.transition = "transform 0.4s ease-in-out";
     counter++;
-    console.log(counter);
     out.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
@@ -81,10 +80,5 @@ prevBtn.addEventListener('click', ()=>{
     }
     out.style.transition = "transform 0.4s ease-in-out";
     counter--;
-    console.log(counter);
     out.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
-
-// out.addEventListener('transitionend', ()=>{
-//     console.log('Fired');
-// });
