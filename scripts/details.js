@@ -13,8 +13,9 @@ const meta = document.querySelector(".meta");
 postDetail = (details) => {
     console.log(details);
     document.title = `Star Blogs | ${details.title.rendered}`
-    meta.setAttribute("name", "description");
+    // meta.setAttribute("name", "description");
     meta.setAttribute("content", `${details.excerpt.rendered}`);
+    console.log(meta);
         let media = details._embedded["wp:featuredmedia"]
         for (images of media){
             console.log(images);

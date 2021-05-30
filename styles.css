@@ -102,9 +102,6 @@ header {
   border-radius: 5px;
 }
 
-#activeHeadBurger {
-  border-bottom: red 1px solid;
-}
 
 footer {
   display: flex;
