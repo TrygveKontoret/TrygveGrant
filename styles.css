@@ -61,7 +61,7 @@ header {
 }
 
 .burgerLogo {
-  width: 100%;
+  width: 0%;
   display: flex;
   justify-content: flex-start;
 }
@@ -441,15 +441,15 @@ form p {
   bottom: 45%;
   background-color: #07070785;
   z-index: 5;
-  padding: 5px;
+  padding: 20px 10px;
 }
 
 #nextBtn{
   position: absolute;
   cursor: pointer;
   right: 0;
-  bottom: 45%;
-  padding: 5px;
+  bottom: 40%;
+  padding: 20px 10px;
   background-color: #07070785;
 }
 
@@ -469,6 +469,10 @@ form p {
 
   .form-container {
     max-width: 400px;
+  }
+
+  .posts {
+    width: 500px;
   }
 }
 
@@ -491,12 +495,12 @@ form p {
     padding: 0 30px;
   } */
 
-  /* .navbar-head {
+  .navbar-head {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-  } */
+  }
 
   .burgerLogo {
     display: none;
